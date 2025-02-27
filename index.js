@@ -7,6 +7,9 @@ const app = express();
 app.get('/', (req, res) => {
     res.json({ message: "Hello Venu Asarelly WelCome to AWS Lambda🚀" });
 });
+app.get('/test', (req, res) => {
+    res.json({ message: "Hello TEST Venu Asarelly WelCome to AWS Lambda🚀" });
+});
 
 // Create the AWS Lambda server
 const server = awsServerlessExpress.createServer(app);
