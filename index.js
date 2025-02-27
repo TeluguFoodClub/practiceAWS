@@ -5,7 +5,7 @@ const app = express();
 
 // Sample route
 app.get('/', (req, res) => {
-    res.json({ message: "Hello from AWS Lambda! 🚀" });
+    res.json({ message: "Hello from AWS Lambda! asarelly venu 🚀" });
 });
 
 // Create the AWS Lambda server
