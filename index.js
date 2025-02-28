@@ -1,11 +1,14 @@
 const express = require('express');
 const awsServerlessExpress = require('aws-serverless-express');
 
-const app = express();
+const app = express(use.json());
 
 // Sample route
-app.get('/', (req, res) => {
-    res.json({ message: "Hello from AWS Lambda! asarelly venu 🚀" });
+app.get('/', (event, res) => {
+    res.json({ message: "Hello Venu Asarelly WelCome to AWS Lambda🚀" });
+});
+app.get('/test', (event, res) => {
+    res.json({ message: "Hello TEST Venu Asarelly WelCome to AWS Lambda🚀" });
 });
 
 // Create the AWS Lambda server
